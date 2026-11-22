@@ -1,0 +1,82 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-22-05-45-29-128741-7c38ae492639-29
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [35]
+[INFO] [parameter_bridge-2]: process started with pid [36]
+[INFO] [static_transform_publisher-3]: process started with pid [37]
+[INFO] [static_transform_publisher-4]: process started with pid [38]
+[INFO] [static_transform_publisher-5]: process started with pid [39]
+[INFO] [odom_noise_node-6]: process started with pid [40]
+[INFO] [scan_slam_node-7]: process started with pid [41]
+[INFO] [segmentation_node-8]: process started with pid [42]
+[INFO] [explorer_node-9]: process started with pid [43]
+[static_transform_publisher-5] [INFO] [1795326329.276712127] [static_transform_publisher_411qqEbSqf36JHZz]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.445500', '0.000000', '0.513000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_link' to 'camera_link'
+[static_transform_publisher-4] [INFO] [1795326329.276868595] [static_transform_publisher_b8nxtyuYlMd8A68P]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.000000', '0.000000', '0.405000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_link' to 'imu_link'
+[static_transform_publisher-3] [INFO] [1795326329.277209448] [static_transform_publisher_IGx2KXXXMxJSdE3m]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.972000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_link' to 'lidar_link'
+[explorer_node-9] [INFO] [1795326330.083865395] [explorer]: explorer ready: pose source 'ground_truth', grid 408x280 @ 0.25 m
+[scan_slam_node-7] [INFO] [1795326330.155603351] [scan_slam]: scan_slam ready (start pose [-40.5, 0.0, 0.0])
+[segmentation_node-8] [INFO] [1795326330.303847363] [segmentation]: segmentation ready: call  ros2 service call /segment_map std_srvs/srv/Trigger
+[parameter_bridge-2] [INFO] [1795326330.393696331] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1795326330.395007479] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1795326330.397393830] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1795326330.399743113] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth/odom (gz.msgs.Odometry) -> /ground_truth/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1795326330.400888112] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (gz.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1795326330.403335474] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/lidar/points (gz.msgs.PointCloudPacked) -> /lidar/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1795326330.405085672] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image_raw (gz.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[INFO] [create-10]: process started with pid [176]
+[create-10] [INFO] [1795326335.461301269] [ros_gz_sim]: Entity creation successful.
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="mapping_robot"]/link[@name="lidar_link"]/sensor[@name="lidar"]/gz_frame_id:/ws/install/mining_sim_gz/share/mining_sim_gz/models/mapping_robot/model.sdf:L30]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="mapping_robot"]/link[@name="imu_link"]/sensor[@name="imu"]/gz_frame_id:/ws/install/mining_sim_gz/share/mining_sim_gz/models/mapping_robot/model.sdf:L44]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="mapping_robot"]/link[@name="camera_link"]/sensor[@name="camera"]/gz_frame_id:/ws/install/mining_sim_gz/share/mining_sim_gz/models/mapping_robot/model.sdf:L55]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[INFO] [create-10]: process has finished cleanly [pid 176]
+[parameter_bridge-2] [INFO] [1795326336.977254650] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[scan_slam_node-7] [INFO] [1795326337.347952955] [scan_slam]: ATE slam 0.06 m / odom-only 0.00 m | loops 0 (rejected 0) | keyframes 1
+[explorer_node-9] [INFO] [1795326337.351279082] [explorer]: exploring: coverage 0.0% travelled 0 m frontiers 1
+[scan_slam_node-7] [INFO] [1795326347.698032357] [scan_slam]: ATE slam 0.31 m / odom-only 0.45 m | loops 0 (rejected 0) | keyframes 4
+[explorer_node-9] [INFO] [1795326347.701131689] [explorer]: exploring: coverage 9.3% travelled 5 m frontiers 6
+[explorer_node-9] [INFO] [1795326358.644138459] [explorer]: exploring: coverage 9.6% travelled 9 m frontiers 6
+[scan_slam_node-7] [INFO] [1795326358.644867490] [scan_slam]: ATE slam 0.62 m / odom-only 1.50 m | loops 0 (rejected 0) | keyframes 5
+[explorer_node-9] [INFO] [1795326369.773274020] [explorer]: exploring: coverage 13.9% travelled 14 m frontiers 5
+[scan_slam_node-7] [INFO] [1795326369.775823502] [scan_slam]: ATE slam 0.58 m / odom-only 3.90 m | loops 0 (rejected 0) | keyframes 9
+[explorer_node-9] [INFO] [1795326380.924004352] [explorer]: exploring: coverage 20.2% travelled 20 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326380.928129042] [scan_slam]: ATE slam 0.54 m / odom-only 6.87 m | loops 0 (rejected 0) | keyframes 14
+[explorer_node-9] [INFO] [1795326390.937990533] [explorer]: exploring: coverage 22.5% travelled 26 m frontiers 9
+[scan_slam_node-7] [INFO] [1795326390.947727244] [scan_slam]: ATE slam 1.62 m / odom-only 8.81 m | loops 0 (rejected 0) | keyframes 15
+[explorer_node-9] [INFO] [1795326401.575975505] [explorer]: complete: coverage 22.8% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326401.585200359] [scan_slam]: ATE slam 3.15 m / odom-only 11.29 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326412.583713453] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326412.599356146] [scan_slam]: ATE slam 4.08 m / odom-only 13.29 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326423.406634916] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326423.416923860] [scan_slam]: ATE slam 4.62 m / odom-only 14.52 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326433.426298367] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326433.441182498] [scan_slam]: ATE slam 4.95 m / odom-only 15.30 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326444.297479762] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326444.313302055] [scan_slam]: ATE slam 5.22 m / odom-only 15.94 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326455.392861467] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326455.415863382] [scan_slam]: ATE slam 5.42 m / odom-only 16.42 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326466.290359581] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326466.309561879] [scan_slam]: ATE slam 5.58 m / odom-only 16.81 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326477.375629465] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326477.402548346] [scan_slam]: ATE slam 5.70 m / odom-only 17.12 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326488.294017678] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326488.320816062] [scan_slam]: ATE slam 5.81 m / odom-only 17.38 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326499.283714040] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326499.325892568] [scan_slam]: ATE slam 5.90 m / odom-only 17.59 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326510.244533696] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326510.271637627] [scan_slam]: ATE slam 5.98 m / odom-only 17.78 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326521.347399422] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326521.390851865] [scan_slam]: ATE slam 6.05 m / odom-only 17.94 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326532.424366877] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326532.459364881] [scan_slam]: ATE slam 6.10 m / odom-only 18.07 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326542.608522953] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326542.654763233] [scan_slam]: ATE slam 6.15 m / odom-only 18.19 m | loops 0 (rejected 0) | keyframes 21
+[explorer_node-9] [INFO] [1795326553.622155506] [explorer]: complete: coverage 23.0% travelled 32 m frontiers 8
+[scan_slam_node-7] [INFO] [1795326553.658942314] [scan_slam]: ATE slam 6.19 m / odom-only 18.29 m | loops 0 (rejected 0) | keyframes 21

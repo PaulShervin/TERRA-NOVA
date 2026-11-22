@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:," />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Facility – 3D Simulation Environment</title>
+</head>
+<body>
+  <div id="app"></div>
+
+  <svg id="leaders" aria-hidden="true"></svg>
+  <div id="callouts"></div>
+
+  <header id="title">
+    <h1>Industrial Facility – 3D Simulation Environment</h1>
+    <p>for Autonomous 3D Mapping, Segmentation &amp; Exploration</p>
+  </header>
+
+  <div id="gizmo-wrap">
+    <div id="gizmo"></div>
+    <span id="gizmo-x" class="gl gx">X</span><span id="gizmo-y" class="gl gy">Y</span><span id="gizmo-z" class="gl gz">Z (Up)</span>
+  </div>
+
+  <aside id="details" class="panel">
+    <h2>Environment Details</h2>
+    <ul id="details-list"></ul>
+  </aside>
+
+  <aside id="right-col">
+    <section class="panel inset">
+      <h3><span class="ico">&#9673;</span>RGB Camera View</h3>
+      <div class="viewport" id="inset-rgb"></div>
+    </section>
+    <section class="panel inset">
+      <h3><span class="ico">&#10052;</span>LiDAR Map (live 3D)</h3>
+      <div class="viewport" id="inset-lidar"></div>
+    </section>
+    <section class="panel inset">
+      <h3><span class="ico">&#9830;</span>Semantic Segmentation (Example)</h3>
+      <div class="viewport" id="inset-sem"><ul id="legend"></ul></div>
+    </section>
+    <section class="panel inset">
+      <h3><span class="ico">&#9638;</span>Occupancy Map (2D)</h3>
+      <div class="viewport" id="inset-map"><canvas id="minimap"></canvas><div id="map-status"></div></div>
+    </section>
+  </aside>
+
+  <button id="algo-btn" class="panel" title="How the algorithms work">&#9432; Algorithms</button>
+  <button id="controls-toggle" class="panel" title="Show / hide controls">&#9881; Controls</button>
+  <div id="controls" class="panel" hidden></div>
+  <script type="module" src="/src/entry.js"></script>
+</body>
+</html>

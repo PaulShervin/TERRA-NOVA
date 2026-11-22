@@ -1,0 +1,3128 @@
+{
+  "meta": {
+    "name": "industrial_mining_facility",
+    "units": "metres",
+    "frame": "ROS REP-103 (x fwd, y left, z up, yaw CCW)",
+    "note": "position = base-centre of object; size = [x,y,z] extents in object local frame. Visual prototype only.",
+    "bounds": {
+      "xMin": -30,
+      "xMax": 30,
+      "yMin": -20,
+      "yMax": 20
+    }
+  },
+  "robot": {
+    "spawn": [
+      -16,
+      -6,
+      0
+    ],
+    "yaw": 0,
+    "radius": 0.45
+  },
+  "zones": [
+    {
+      "id": "Z1",
+      "name": "Maintenance Zone",
+      "bounds": [
+        -30,
+        -20,
+        -10,
+        8
+      ],
+      "anchor": [
+        -28.6,
+        -10.5,
+        1
+      ]
+    },
+    {
+      "id": "Z2",
+      "name": "Processing Zone",
+      "bounds": [
+        8,
+        -8,
+        30,
+        20
+      ],
+      "anchor": [
+        20,
+        0,
+        2.6
+      ]
+    },
+    {
+      "id": "Z3",
+      "name": "Utility Zone",
+      "bounds": [
+        8,
+        -20,
+        30,
+        -8
+      ],
+      "anchor": [
+        27.5,
+        -17.5,
+        5
+      ]
+    },
+    {
+      "id": "Z4",
+      "name": "Storage Zone",
+      "bounds": [
+        -30,
+        8,
+        -10,
+        20
+      ],
+      "anchor": [
+        -24,
+        18.6,
+        2.6
+      ]
+    }
+  ],
+  "navPath": [
+    [
+      -16,
+      -6
+    ],
+    [
+      4,
+      -6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      -6,
+      6
+    ],
+    [
+      -6,
+      10
+    ],
+    [
+      -20,
+      10
+    ],
+    [
+      -20,
+      -6
+    ]
+  ],
+  "lights": [
+    [
+      -20,
+      -10,
+      5.4
+    ],
+    [
+      -20,
+      0,
+      5.4
+    ],
+    [
+      -20,
+      12,
+      5.4
+    ],
+    [
+      -5,
+      -14,
+      5.4
+    ],
+    [
+      -5,
+      6,
+      5.4
+    ],
+    [
+      0,
+      14,
+      5.4
+    ],
+    [
+      14,
+      -14,
+      5.4
+    ],
+    [
+      26,
+      -14,
+      5.4
+    ],
+    [
+      14,
+      6,
+      5.4
+    ],
+    [
+      26,
+      6,
+      5.4
+    ],
+    [
+      20,
+      16,
+      5.4
+    ],
+    [
+      8,
+      -2,
+      5.4
+    ]
+  ],
+  "objects": [
+    {
+      "id": "floor_015",
+      "name": "factory_floor",
+      "category": "floor",
+      "model": "floor",
+      "material": "floor",
+      "position": [
+        0,
+        0,
+        -0.1
+      ],
+      "size": [
+        60,
+        40,
+        0.1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_016",
+      "name": "outer_south",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        0,
+        -20.2,
+        0
+      ],
+      "size": [
+        60.8,
+        0.4,
+        6.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_017",
+      "name": "outer_north",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        0,
+        20.2,
+        0
+      ],
+      "size": [
+        60.8,
+        0.4,
+        6.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_018",
+      "name": "outer_west",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -30.2,
+        0,
+        0
+      ],
+      "size": [
+        0.4,
+        40,
+        6.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_019",
+      "name": "outer_east",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        30.2,
+        0,
+        0
+      ],
+      "size": [
+        0.4,
+        40,
+        6.5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_001",
+      "name": "west_divider_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -10,
+        -14,
+        0
+      ],
+      "size": [
+        0.3,
+        12,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_002",
+      "name": "west_divider_1",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -10,
+        2,
+        0
+      ],
+      "size": [
+        0.3,
+        12,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_003",
+      "name": "west_divider_2",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -10,
+        16,
+        0
+      ],
+      "size": [
+        0.3,
+        8,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_004",
+      "name": "east_divider_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        8,
+        -16,
+        0
+      ],
+      "size": [
+        0.3,
+        8,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_005",
+      "name": "east_divider_1",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        8,
+        -2,
+        0
+      ],
+      "size": [
+        0.3,
+        12,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_006",
+      "name": "east_divider_2",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        8,
+        14,
+        0
+      ],
+      "size": [
+        0.3,
+        12,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_007",
+      "name": "se_divider_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        13,
+        -8,
+        0
+      ],
+      "size": [
+        10,
+        0.3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_008",
+      "name": "se_divider_1",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        26,
+        -8,
+        0
+      ],
+      "size": [
+        8,
+        0.3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_009",
+      "name": "nw_divider_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -26,
+        8,
+        0
+      ],
+      "size": [
+        8,
+        0.3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_010",
+      "name": "nw_divider_1",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -14,
+        8,
+        0
+      ],
+      "size": [
+        8,
+        0.3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_011",
+      "name": "deadend_west_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -2,
+        14,
+        0
+      ],
+      "size": [
+        0.3,
+        12,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_012",
+      "name": "deadend_east_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        2,
+        14,
+        0
+      ],
+      "size": [
+        0.3,
+        12,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_013",
+      "name": "south_alcove_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        -5,
+        -10,
+        0
+      ],
+      "size": [
+        10,
+        0.3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_014",
+      "name": "se_bay_split_0",
+      "category": "wall",
+      "model": "box",
+      "material": "wall",
+      "position": [
+        19,
+        -17,
+        0
+      ],
+      "size": [
+        0.3,
+        6,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "wall_020",
+      "name": "door_west_divider_0_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -10.18,
+        -17,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_021",
+      "name": "door_west_divider_0_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -10.18,
+        -11,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_022",
+      "name": "door_west_divider_1_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -9.82,
+        -1,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_023",
+      "name": "door_west_divider_1_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -9.82,
+        5,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_024",
+      "name": "door_east_divider_1_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        7.82,
+        -5,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_025",
+      "name": "door_east_divider_1_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        7.82,
+        1,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_026",
+      "name": "door_east_divider_2_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        8.18,
+        11,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_027",
+      "name": "door_east_divider_2_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        8.18,
+        17,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_028",
+      "name": "door_se_divider_0_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        10.5,
+        -8.18,
+        0
+      ],
+      "size": [
+        1.2,
+        0.08,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_029",
+      "name": "door_se_divider_0_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        15.5,
+        -8.18,
+        0
+      ],
+      "size": [
+        1.2,
+        0.08,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_030",
+      "name": "door_deadend_west_0_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -1.82,
+        11,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_031",
+      "name": "door_deadend_west_0_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -1.82,
+        17,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_032",
+      "name": "door_deadend_east_0_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        1.82,
+        11,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_033",
+      "name": "door_deadend_east_0_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        1.82,
+        17,
+        0
+      ],
+      "size": [
+        0.08,
+        1.2,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_034",
+      "name": "door_south_alcove_0_a",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -7.5,
+        -9.82,
+        0
+      ],
+      "size": [
+        1.2,
+        0.08,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "wall_035",
+      "name": "door_south_alcove_0_b",
+      "category": "wall",
+      "model": "box",
+      "material": "door",
+      "position": [
+        -2.5,
+        -9.82,
+        0
+      ],
+      "size": [
+        1.2,
+        0.08,
+        2.2
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pathway_036",
+      "name": "lane_0_0",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        -12,
+        -6,
+        0
+      ],
+      "size": [
+        32.2,
+        0.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_037",
+      "name": "lane_0_1",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        4,
+        -8,
+        0
+      ],
+      "size": [
+        0.2,
+        4.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_038",
+      "name": "lane_0_2",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        15,
+        -10,
+        0
+      ],
+      "size": [
+        22.2,
+        0.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_039",
+      "name": "lane_1_0",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        4,
+        0,
+        0
+      ],
+      "size": [
+        0.2,
+        12.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_040",
+      "name": "lane_1_1",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        15,
+        6,
+        0
+      ],
+      "size": [
+        22.2,
+        0.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_041",
+      "name": "lane_2_0",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        -20,
+        2,
+        0
+      ],
+      "size": [
+        0.2,
+        16.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_042",
+      "name": "lane_2_1",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        -13,
+        10,
+        0
+      ],
+      "size": [
+        14.2,
+        0.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_043",
+      "name": "lane_2_2",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        -6,
+        8,
+        0
+      ],
+      "size": [
+        0.2,
+        4.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_044",
+      "name": "lane_2_3",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        -1,
+        6,
+        0
+      ],
+      "size": [
+        10.2,
+        0.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pathway_045",
+      "name": "lane_3_0",
+      "category": "pathway",
+      "model": "box",
+      "material": "pathway",
+      "position": [
+        0,
+        12,
+        0
+      ],
+      "size": [
+        0.2,
+        12.2,
+        0.02
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_046",
+      "name": "column_0",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -26,
+        -16,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_047",
+      "name": "column_0_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -26,
+        -16,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_048",
+      "name": "column_1",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -26,
+        -11,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_049",
+      "name": "column_1_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -26,
+        -11,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_050",
+      "name": "column_2",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -26,
+        3,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_051",
+      "name": "column_2_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -26,
+        3,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_052",
+      "name": "column_3",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -16,
+        -16,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_053",
+      "name": "column_3_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -16,
+        -16,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_054",
+      "name": "column_4",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -16,
+        -11,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_055",
+      "name": "column_4_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -16,
+        -11,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_056",
+      "name": "column_5",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -16,
+        3,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_057",
+      "name": "column_5_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -16,
+        3,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_058",
+      "name": "column_6",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -6,
+        -15,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_059",
+      "name": "column_6_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -6,
+        -15,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_060",
+      "name": "column_7",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        -6,
+        14,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_061",
+      "name": "column_7_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        -6,
+        14,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_062",
+      "name": "column_8",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        14,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_063",
+      "name": "column_8_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        14,
+        0,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_064",
+      "name": "column_9",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        14,
+        12,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_065",
+      "name": "column_9_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        14,
+        12,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_066",
+      "name": "column_10",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        24,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_067",
+      "name": "column_10_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        24,
+        0,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_068",
+      "name": "column_11",
+      "category": "pillar",
+      "model": "box",
+      "material": "pillar",
+      "position": [
+        24,
+        12,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_069",
+      "name": "column_11_band",
+      "category": "pillar",
+      "model": "box",
+      "material": "hazard",
+      "position": [
+        24,
+        12,
+        0
+      ],
+      "size": [
+        0.64,
+        0.64,
+        1.3
+      ],
+      "yaw": 0,
+      "params": {
+        "decor": true
+      }
+    },
+    {
+      "id": "pillar_070",
+      "name": "roof_beam_0",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        -24,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_071",
+      "name": "roof_beam_1",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        -16,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_072",
+      "name": "roof_beam_2",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        -8,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_073",
+      "name": "roof_beam_3",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        0,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_074",
+      "name": "roof_beam_4",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        8,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_075",
+      "name": "roof_beam_5",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        16,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pillar_076",
+      "name": "roof_beam_6",
+      "category": "pillar",
+      "model": "box",
+      "material": "steel",
+      "position": [
+        24,
+        0,
+        6
+      ],
+      "size": [
+        0.25,
+        40,
+        0.35
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "container_077",
+      "name": "container_a1",
+      "category": "container",
+      "model": "container",
+      "material": "contGreen",
+      "position": [
+        -26,
+        -3,
+        0
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "container_078",
+      "name": "container_a2",
+      "category": "container",
+      "model": "container",
+      "material": "contRust",
+      "position": [
+        -26,
+        0.6,
+        0
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "container_079",
+      "name": "container_a3",
+      "category": "container",
+      "model": "container",
+      "material": "contBlue",
+      "position": [
+        -26,
+        -3,
+        2.6
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "container_080",
+      "name": "container_b1",
+      "category": "container",
+      "model": "container",
+      "material": "contRust",
+      "position": [
+        -13,
+        -14,
+        0
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "container_081",
+      "name": "container_c1",
+      "category": "container",
+      "model": "container",
+      "material": "contGreen",
+      "position": [
+        -22,
+        -16.5,
+        0
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "container_082",
+      "name": "container_c2",
+      "category": "container",
+      "model": "container",
+      "material": "contRust",
+      "position": [
+        -22,
+        -16.5,
+        2.6
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_083",
+      "name": "crate_1",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -25,
+        5.2,
+        0
+      ],
+      "size": [
+        1.2,
+        1.2,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_084",
+      "name": "crate_2",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -23.7,
+        5.2,
+        0
+      ],
+      "size": [
+        1.2,
+        1.2,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_085",
+      "name": "crate_3",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -25,
+        5.2,
+        1
+      ],
+      "size": [
+        1.2,
+        1.2,
+        1
+      ],
+      "yaw": 0.2
+    },
+    {
+      "id": "storage_086",
+      "name": "crate_4",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -12,
+        4,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        0.8
+      ],
+      "yaw": 0.4
+    },
+    {
+      "id": "storage_087",
+      "name": "crate_5",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -12,
+        2.9,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_088",
+      "name": "drum_1",
+      "category": "storage",
+      "model": "drum",
+      "material": "drum",
+      "position": [
+        -12.3,
+        -1.8,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_089",
+      "name": "drum_2",
+      "category": "storage",
+      "model": "drum",
+      "material": "drum",
+      "position": [
+        -12.9,
+        -1.4,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_090",
+      "name": "drum_3",
+      "category": "storage",
+      "model": "drum",
+      "material": "drum",
+      "position": [
+        -12.1,
+        -0.9,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_091",
+      "name": "drum_4",
+      "category": "storage",
+      "model": "drum",
+      "material": "drum",
+      "position": [
+        -12.8,
+        -0.6,
+        0
+      ],
+      "size": [
+        0.6,
+        0.6,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "rack_092",
+      "name": "rack_1",
+      "category": "rack",
+      "model": "rack",
+      "material": "rackOrange",
+      "position": [
+        -28.3,
+        14,
+        0
+      ],
+      "size": [
+        3.2,
+        1,
+        3
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "rack_093",
+      "name": "rack_2",
+      "category": "rack",
+      "model": "rack",
+      "material": "rackOrange",
+      "position": [
+        -28.3,
+        17.5,
+        0
+      ],
+      "size": [
+        3.2,
+        1,
+        3
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "rack_094",
+      "name": "rack_3",
+      "category": "rack",
+      "model": "rack",
+      "material": "rackOrange",
+      "position": [
+        -14,
+        19.2,
+        0
+      ],
+      "size": [
+        4,
+        1,
+        3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "obstacle_095",
+      "name": "rubble_1",
+      "category": "obstacle",
+      "model": "rock",
+      "material": "rubble",
+      "position": [
+        -19,
+        13.5,
+        0
+      ],
+      "size": [
+        2.2,
+        1.8,
+        1.2
+      ],
+      "yaw": 0.3
+    },
+    {
+      "id": "obstacle_096",
+      "name": "rubble_2",
+      "category": "obstacle",
+      "model": "rock",
+      "material": "rubble",
+      "position": [
+        -17.4,
+        14.7,
+        0
+      ],
+      "size": [
+        1.4,
+        1.3,
+        0.9
+      ],
+      "yaw": 1.1
+    },
+    {
+      "id": "obstacle_097",
+      "name": "rubble_3",
+      "category": "obstacle",
+      "model": "rock",
+      "material": "rubble",
+      "position": [
+        -20.4,
+        14.6,
+        0
+      ],
+      "size": [
+        1.2,
+        1,
+        0.7
+      ],
+      "yaw": 2
+    },
+    {
+      "id": "obstacle_098",
+      "name": "rubble_4",
+      "category": "obstacle",
+      "model": "rock",
+      "material": "rubble",
+      "position": [
+        -18.6,
+        15.3,
+        0
+      ],
+      "size": [
+        0.9,
+        0.9,
+        0.6
+      ],
+      "yaw": 0.7
+    },
+    {
+      "id": "obstacle_099",
+      "name": "rubble_5",
+      "category": "obstacle",
+      "model": "rock",
+      "material": "rubble",
+      "position": [
+        -24,
+        -9,
+        0
+      ],
+      "size": [
+        0.9,
+        0.8,
+        0.55
+      ],
+      "yaw": 0.2
+    },
+    {
+      "id": "obstacle_100",
+      "name": "rubble_6",
+      "category": "obstacle",
+      "model": "rock",
+      "material": "rubble",
+      "position": [
+        -23.2,
+        -9.6,
+        0
+      ],
+      "size": [
+        0.7,
+        0.7,
+        0.45
+      ],
+      "yaw": 1.4
+    },
+    {
+      "id": "container_101",
+      "name": "container_z4",
+      "category": "container",
+      "model": "container",
+      "material": "contRed",
+      "position": [
+        -24,
+        18.6,
+        0
+      ],
+      "size": [
+        6,
+        2.4,
+        2.6
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "rack_102",
+      "name": "rack_4",
+      "category": "rack",
+      "model": "rack",
+      "material": "rackBlue",
+      "position": [
+        -14,
+        16.4,
+        0
+      ],
+      "size": [
+        4,
+        1,
+        3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_103",
+      "name": "pallet_1",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -22,
+        12.4,
+        0
+      ],
+      "size": [
+        1.2,
+        1.2,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_104",
+      "name": "pallet_2",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -22,
+        12.4,
+        1
+      ],
+      "size": [
+        1,
+        1,
+        0.9
+      ],
+      "yaw": 0.3
+    },
+    {
+      "id": "storage_105",
+      "name": "pallet_3",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -13,
+        12.8,
+        0
+      ],
+      "size": [
+        1.2,
+        1.2,
+        1
+      ],
+      "yaw": 0.2
+    },
+    {
+      "id": "equipment_106",
+      "name": "workbench_1",
+      "category": "equipment",
+      "model": "workbench",
+      "material": "wood",
+      "position": [
+        -28.6,
+        -10.5,
+        0
+      ],
+      "size": [
+        3,
+        0.9,
+        1
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "equipment_107",
+      "name": "toolbox_1",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "toolRed",
+      "position": [
+        -28.8,
+        -14,
+        0
+      ],
+      "size": [
+        0.6,
+        0.8,
+        1.2
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "equipment_108",
+      "name": "toolbox_2",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "toolRed",
+      "position": [
+        -28.8,
+        -15,
+        0
+      ],
+      "size": [
+        0.6,
+        0.8,
+        1.2
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "rack_109",
+      "name": "rack_m1",
+      "category": "rack",
+      "model": "rack",
+      "material": "rackBlue",
+      "position": [
+        -28.3,
+        -18,
+        0
+      ],
+      "size": [
+        3.2,
+        1,
+        3
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "equipment_110",
+      "name": "water_tank",
+      "category": "equipment",
+      "model": "tank",
+      "material": "machineBlue",
+      "position": [
+        -16,
+        4.5,
+        0
+      ],
+      "size": [
+        2.2,
+        2.2,
+        3.4
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_111",
+      "name": "bollard_1",
+      "category": "barrier",
+      "model": "bollard",
+      "material": "machineYellow",
+      "position": [
+        -11.2,
+        -9.2,
+        0
+      ],
+      "size": [
+        0.25,
+        0.25,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_112",
+      "name": "bollard_2",
+      "category": "barrier",
+      "model": "bollard",
+      "material": "machineYellow",
+      "position": [
+        -11.2,
+        -2.8,
+        0
+      ],
+      "size": [
+        0.25,
+        0.25,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_113",
+      "name": "barrier_w1",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrier",
+      "position": [
+        -17,
+        -2,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_114",
+      "name": "barrier_w2",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrierGrey",
+      "position": [
+        -17,
+        -9.5,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 0.15
+    },
+    {
+      "id": "platform_115",
+      "name": "inspection_platform",
+      "category": "platform",
+      "model": "platform",
+      "material": "steel",
+      "position": [
+        -6,
+        0,
+        0
+      ],
+      "size": [
+        6,
+        4,
+        2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "platform_116",
+      "name": "platform_stairs",
+      "category": "platform",
+      "model": "stairs",
+      "material": "steel",
+      "position": [
+        -1.75,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        1,
+        1.85
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_117",
+      "name": "barrier_c1",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrier",
+      "position": [
+        2,
+        -2,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_118",
+      "name": "barrier_c2",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrier",
+      "position": [
+        6.3,
+        -2,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_119",
+      "name": "bollard_c1",
+      "category": "barrier",
+      "model": "bollard",
+      "material": "machineYellow",
+      "position": [
+        3.5,
+        1.5,
+        0
+      ],
+      "size": [
+        0.25,
+        0.25,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_120",
+      "name": "crate_c1",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -8,
+        -14,
+        0
+      ],
+      "size": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "yaw": 0.3
+    },
+    {
+      "id": "storage_121",
+      "name": "crate_c2",
+      "category": "storage",
+      "model": "crate",
+      "material": "crate",
+      "position": [
+        -3.5,
+        -17,
+        0
+      ],
+      "size": [
+        1.5,
+        1.5,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_122",
+      "name": "pump_1",
+      "category": "equipment",
+      "model": "pump",
+      "material": "machineBlue",
+      "position": [
+        -1.2,
+        11,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_123",
+      "name": "pump_2",
+      "category": "equipment",
+      "model": "pump",
+      "material": "machineBlue",
+      "position": [
+        1.2,
+        14.2,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_124",
+      "name": "pump_3",
+      "category": "equipment",
+      "model": "pump",
+      "material": "machineBlue",
+      "position": [
+        -1.2,
+        17,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        0.9
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_125",
+      "name": "control_cabinet_end",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "darkSteel",
+      "position": [
+        0,
+        19.4,
+        0
+      ],
+      "size": [
+        1.6,
+        0.6,
+        2.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_126",
+      "name": "riser_dead_1",
+      "category": "pipe",
+      "model": "pipe_v",
+      "material": "pipeRed",
+      "position": [
+        -1.75,
+        19.5,
+        0
+      ],
+      "size": [
+        0.25,
+        0.25,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_127",
+      "name": "riser_dead_2",
+      "category": "pipe",
+      "model": "pipe_v",
+      "material": "pipe",
+      "position": [
+        1.75,
+        19.5,
+        0
+      ],
+      "size": [
+        0.25,
+        0.25,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_128",
+      "name": "manifold_dead",
+      "category": "pipe",
+      "model": "pipe_h",
+      "material": "pipe",
+      "position": [
+        0,
+        19.5,
+        4.8
+      ],
+      "size": [
+        3.5,
+        0.25,
+        0.25
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_129",
+      "name": "bridge_pipe_x",
+      "category": "pipe",
+      "model": "pipe_h",
+      "material": "pipeRed",
+      "position": [
+        0,
+        8.2,
+        3.6
+      ],
+      "size": [
+        3.9,
+        0.3,
+        0.3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "machinery_130",
+      "name": "jaw_crusher",
+      "category": "machinery",
+      "model": "crusher",
+      "material": "machineBlue",
+      "position": [
+        13.5,
+        -16,
+        0
+      ],
+      "size": [
+        5,
+        3.5,
+        4
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_131",
+      "name": "mcc_0",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "darkSteel",
+      "position": [
+        9.2,
+        -19.5,
+        0
+      ],
+      "size": [
+        0.9,
+        0.6,
+        2.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_132",
+      "name": "mcc_1",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "darkSteel",
+      "position": [
+        10.2,
+        -19.5,
+        0
+      ],
+      "size": [
+        0.9,
+        0.6,
+        2.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_133",
+      "name": "mcc_2",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "darkSteel",
+      "position": [
+        11.2,
+        -19.5,
+        0
+      ],
+      "size": [
+        0.9,
+        0.6,
+        2.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_134",
+      "name": "mcc_3",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "darkSteel",
+      "position": [
+        12.2,
+        -19.5,
+        0
+      ],
+      "size": [
+        0.9,
+        0.6,
+        2.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_135",
+      "name": "barrier_se1",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrier",
+      "position": [
+        16.5,
+        -11.2,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 0.2
+    },
+    {
+      "id": "equipment_136",
+      "name": "tank_1",
+      "category": "equipment",
+      "model": "tank",
+      "material": "machineBlue",
+      "position": [
+        27.5,
+        -17.5,
+        0
+      ],
+      "size": [
+        3,
+        3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "equipment_137",
+      "name": "tank_2",
+      "category": "equipment",
+      "model": "tank",
+      "material": "steel",
+      "position": [
+        27.5,
+        -12,
+        0
+      ],
+      "size": [
+        3,
+        3,
+        4
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "machinery_138",
+      "name": "generator_1",
+      "category": "machinery",
+      "model": "generator",
+      "material": "machineYellow",
+      "position": [
+        22.5,
+        -17.5,
+        0
+      ],
+      "size": [
+        3,
+        1.5,
+        2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "machinery_139",
+      "name": "generator_2",
+      "category": "machinery",
+      "model": "generator",
+      "material": "machineYellow",
+      "position": [
+        22.5,
+        -14.5,
+        0
+      ],
+      "size": [
+        3,
+        1.5,
+        2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "fence_140",
+      "name": "fence_gen_s",
+      "category": "fence",
+      "model": "fence",
+      "material": "fence",
+      "position": [
+        22.5,
+        -18.8,
+        0
+      ],
+      "size": [
+        4.6,
+        0.06,
+        1.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "fence_141",
+      "name": "fence_gen_w",
+      "category": "fence",
+      "model": "fence",
+      "material": "fence",
+      "position": [
+        20.2,
+        -16,
+        0
+      ],
+      "size": [
+        5.6,
+        0.06,
+        1.8
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "fence_142",
+      "name": "fence_gen_e",
+      "category": "fence",
+      "model": "fence",
+      "material": "fence",
+      "position": [
+        24.8,
+        -16,
+        0
+      ],
+      "size": [
+        5.6,
+        0.06,
+        1.8
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "machinery_143",
+      "name": "ball_mill",
+      "category": "machinery",
+      "model": "mill",
+      "material": "machineBlue",
+      "position": [
+        20,
+        0,
+        0
+      ],
+      "size": [
+        6,
+        3,
+        3.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "fence_144",
+      "name": "fence_mill_s",
+      "category": "fence",
+      "model": "fence",
+      "material": "fence",
+      "position": [
+        20,
+        -3.25,
+        0
+      ],
+      "size": [
+        9,
+        0.06,
+        1.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "fence_145",
+      "name": "fence_mill_n",
+      "category": "fence",
+      "model": "fence",
+      "material": "fence",
+      "position": [
+        20,
+        3.25,
+        0
+      ],
+      "size": [
+        9,
+        0.06,
+        1.8
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "fence_146",
+      "name": "fence_mill_w",
+      "category": "fence",
+      "model": "fence",
+      "material": "fence",
+      "position": [
+        15.5,
+        0,
+        0
+      ],
+      "size": [
+        6.5,
+        0.06,
+        1.8
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "machinery_147",
+      "name": "conveyor_flat",
+      "category": "machinery",
+      "model": "conveyor",
+      "material": "darkSteel",
+      "position": [
+        19,
+        17.2,
+        0
+      ],
+      "size": [
+        18,
+        1,
+        1.3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "machinery_148",
+      "name": "conveyor_incline",
+      "category": "machinery",
+      "model": "conveyor",
+      "material": "darkSteel",
+      "position": [
+        27.5,
+        8.5,
+        0
+      ],
+      "size": [
+        8,
+        1,
+        3.5
+      ],
+      "yaw": 1.5707963267948966,
+      "params": {
+        "incline": true
+      }
+    },
+    {
+      "id": "equipment_149",
+      "name": "switchgear_1",
+      "category": "equipment",
+      "model": "cabinet",
+      "material": "darkSteel",
+      "position": [
+        29.4,
+        1.5,
+        0
+      ],
+      "size": [
+        0.6,
+        1.6,
+        2.2
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "barrier_150",
+      "name": "barrier_e1",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrierGrey",
+      "position": [
+        12,
+        10,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "barrier_151",
+      "name": "barrier_e2",
+      "category": "barrier",
+      "model": "jersey",
+      "material": "barrier",
+      "position": [
+        12,
+        3,
+        0
+      ],
+      "size": [
+        3,
+        0.6,
+        0.8
+      ],
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "storage_152",
+      "name": "ore_bin_0",
+      "category": "storage",
+      "model": "crate",
+      "material": "darkSteel",
+      "position": [
+        10.5,
+        12.2,
+        0
+      ],
+      "size": [
+        1.4,
+        1.4,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "storage_153",
+      "name": "ore_bin_1",
+      "category": "storage",
+      "model": "crate",
+      "material": "darkSteel",
+      "position": [
+        10.5,
+        13.899999999999999,
+        0
+      ],
+      "size": [
+        1.4,
+        1.4,
+        1
+      ],
+      "yaw": 0.1
+    },
+    {
+      "id": "storage_154",
+      "name": "ore_bin_2",
+      "category": "storage",
+      "model": "crate",
+      "material": "darkSteel",
+      "position": [
+        10.5,
+        15.6,
+        0
+      ],
+      "size": [
+        1.4,
+        1.4,
+        1
+      ],
+      "yaw": 0.2
+    },
+    {
+      "id": "pipe_155",
+      "name": "pipe_run_n1",
+      "category": "pipe",
+      "model": "pipe_h",
+      "material": "pipe",
+      "position": [
+        19.5,
+        19.55,
+        4.1
+      ],
+      "size": [
+        20,
+        0.4,
+        0.4
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_156",
+      "name": "pipe_run_n2",
+      "category": "pipe",
+      "model": "pipe_h",
+      "material": "pipeRed",
+      "position": [
+        19.5,
+        19.55,
+        4.8
+      ],
+      "size": [
+        20,
+        0.3,
+        0.3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_157",
+      "name": "riser_e1",
+      "category": "pipe",
+      "model": "pipe_v",
+      "material": "pipe",
+      "position": [
+        9.2,
+        19.55,
+        0
+      ],
+      "size": [
+        0.4,
+        0.4,
+        4.3
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_158",
+      "name": "riser_e2",
+      "category": "pipe",
+      "model": "pipe_v",
+      "material": "pipeRed",
+      "position": [
+        29.5,
+        19.55,
+        0
+      ],
+      "size": [
+        0.3,
+        0.3,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "id": "pipe_159",
+      "name": "pipe_run_w",
+      "category": "pipe",
+      "model": "pipe_h",
+      "material": "pipe",
+      "position": [
+        -29.55,
+        -6,
+        3.8
+      ],
+      "size": [
+        26,
+        0.4,
+        0.4
+      ],
+      "yaw": 1.5707963267948966
+    }
+  ]
+}

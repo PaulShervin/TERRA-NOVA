@@ -1,0 +1,14 @@
+{
+  "file": "truth_industrial.bin",
+  "layout": "row-major [j*W+i], uint8, 1 = reachable free space",
+  "res": 0.2,
+  "W": 300,
+  "H": 200,
+  "count": 52956,
+  "bounds": {
+    "xMin": -30,
+    "xMax": 30,
+    "yMin": -20,
+    "yMax": 20
+  }
+}

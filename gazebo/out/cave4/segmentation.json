@@ -1,0 +1,1 @@
+{"points": 40769, "voxels": 22365, "counts": {"floor": 9583, "ceiling": 12414, "wall": 12519, "object": 6253}, "accuracy": 0.6713, "mean_iou": 0.457, "iou": {"floor": 0.679, "ceiling": 0.654, "wall": 0.456, "object": 0.038}}

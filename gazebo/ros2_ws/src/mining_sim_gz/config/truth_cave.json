@@ -1,0 +1,16 @@
+{
+  "file": "truth_cave.bin",
+  "layout": "row-major [j*W+i], uint8, 1 = reachable free space",
+  "res": 0.25,
+  "W": 408,
+  "H": 280,
+  "count": 15922,
+  "bounds": {
+    "xMin": -50,
+    "xMax": 52,
+    "yMin": -38,
+    "yMax": 32,
+    "zMin": -8,
+    "zMax": 14
+  }
+}

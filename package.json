@@ -1,0 +1,29 @@
+{
+  "name": "industrial-sim-3d",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/validate-layout.mjs",
+    "export-layout": "node scripts/export-layout.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "test:cave": "node scripts/test-cave-geometry.mjs",
+    "sim:cave": "node scripts/sim-cave.mjs 1800",
+    "sim:industrial": "node scripts/sim-explore.mjs 1500",
+    "export-cave": "node scripts/export-cave.mjs",
+    "sim:slam": "node scripts/sim-slam.mjs 900",
+    "evaluate": "node scripts/evaluate.mjs",
+    "smoke:slam": "node scripts/smoke-slam.mjs",
+    "export-gazebo": "node scripts/export-gazebo.mjs"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1",
+    "vite": "^6.0.0"
+  }
+}

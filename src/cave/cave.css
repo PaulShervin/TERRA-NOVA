@@ -1,0 +1,36 @@
+/* Cave-only styles. Loaded ONLY in cave mode; hides the industrial dashboard DOM that index.html contains. */
+body.cave-mode #title, body.cave-mode #details, body.cave-mode #right-col, body.cave-mode #controls-toggle,
+body.cave-mode #algo-btn, body.cave-mode #controls, body.cave-mode #gizmo-wrap, body.cave-mode #leaders,
+body.cave-mode #callouts, body.cave-mode #guide { display: none !important; }
+
+#cave-title { position: fixed; top: 52px; left: 22px; padding-left: 14px; border-left: 5px solid #c08a3e; pointer-events: none; max-width: 70vw; }
+#cave-title h1 { margin: 0; font-size: 24px; font-weight: 700; }
+#cave-title p { margin: 3px 0 0; font-size: 14.5px; color: #d3dce8; }
+#cave-title em { color: #e8c07a; font-style: normal; }
+#cave-controls-toggle { position: fixed; top: 128px; left: 22px; color: var(--text); padding: 6px 12px; font-size: 14px; cursor: pointer; }
+#cave-controls { position: fixed; top: 168px; left: 22px; width: 300px; padding: 12px 14px; font-size: 13.5px; line-height: 1.7; max-height: calc(100vh - 190px); overflow: auto; }
+#cave-controls[hidden] { display: none; }
+#cave-controls b { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .6px; }
+#cave-controls label { display: block; cursor: pointer; }
+#cave-controls button { background: #172a4a; color: var(--text); border: 1px solid #3a6fc0; border-radius: 6px; padding: 4px 9px; margin: 2px 3px 2px 0; cursor: pointer; font-size: 13px; }
+#cave-controls button:hover { background: #1f3a66; }
+#cave-readout { margin-top: 8px; color: var(--muted); font-family: ui-monospace, Consolas, monospace; font-size: 12px; white-space: pre; }
+#cave-map { position: fixed; right: 18px; bottom: 18px; width: 360px; padding: 10px 12px; }
+#cave-map h3 { margin: 0 0 6px; font-size: 15px; }
+.cave-map-view { position: relative; height: 200px; border: 1px solid #1d2f4d; border-radius: 6px; overflow: hidden; background: #0e1420; }
+#cave-minimap { width: 100%; height: 100%; display: block; }
+#cave-map-status { position: absolute; left: 6px; bottom: 4px; font-size: 11.5px; font-weight: 600; color: #cfe0ff; text-shadow: 0 1px 2px #000; }
+.cave-legend { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; font-size: 12px; }
+.cave-legend li { display: flex; align-items: center; gap: 7px; }
+.cave-legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; flex: none; }
+.cave-note { margin: 6px 0 0; font-size: 11.5px; color: #e8c07a; line-height: 1.4; }
+#cave-loading { position: fixed; inset: 0; display: flex; gap: 14px; align-items: center; justify-content: center; background: rgba(8, 7, 6, .92); z-index: 60; font-size: 18px; }
+#cave-loading[hidden] { display: none; }
+.spinner { width: 26px; height: 26px; border: 3px solid #5a4a36; border-top-color: #e8c07a; border-radius: 50%; animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 900px) { #cave-map { width: 260px; } .cave-map-view { height: 140px; } }
+
+#cave-slam-card { position: fixed; left: 16px; bottom: 16px; padding: 10px 14px; font-size: 12px; z-index: 5; }
+#cave-slam-card h3 { margin: 0 0 6px; font-size: 13px; }
+#cave-slam-stats, #cave-seg-result { color: var(--muted); font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; white-space: pre; }
+#cave-seg-result { margin-top: 6px; }

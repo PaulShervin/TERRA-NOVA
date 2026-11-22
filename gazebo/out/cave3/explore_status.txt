@@ -1,0 +1,2 @@
+data: '{"state": "exploring", "coverage": 0.5121, "travelled": 120.9, "frontiers": 23, "scans": 1070}'
+---

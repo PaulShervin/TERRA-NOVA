@@ -1,0 +1,22 @@
+// Browser check of the SLAM estimate overlay, the localisation card and the label-free segmentation view (cave).
+import puppeteer from 'puppeteer-core';
+const browser = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new', args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage();
+await page.setViewport({ width: 1500, height: 900 });
+const errors = [];
+page.on('pageerror', (e) => errors.push(e.message));
+page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
+await page.goto('http://localhost:5173/?env=cave', { waitUntil: 'load' });
+await page.waitForFunction(() => window.__cave, { timeout: 120000 });
+await new Promise((r) => setTimeout(r, 2000));
+for (let i = 0; i < 3; i++) await page.evaluate(() => window.__cave.mapper.advance(100));
+await page.evaluate(() => { document.getElementById('cave-controls-toggle').click(); });
+await new Promise((r) => setTimeout(r, 2500));
+await page.screenshot({ path: 'screenshots/slam_traj.png' });
+await page.evaluate(() => document.getElementById('cave-segment').click());
+await new Promise((r) => setTimeout(r, 3000));
+await page.screenshot({ path: 'screenshots/slam_segmentation.png' });
+console.log(await page.evaluate(() => document.getElementById('cave-slam-stats').textContent));
+console.log(await page.evaluate(() => document.getElementById('cave-seg-result').textContent));
+console.log(errors.length ? 'ERRORS:\n' + errors.join('\n') : 'no console errors');
+await browser.close();

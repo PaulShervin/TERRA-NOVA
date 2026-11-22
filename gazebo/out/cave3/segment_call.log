@@ -1,0 +1,6 @@
+waiting for service to become available...
+requester: making request: std_srvs.srv.Trigger_Request()
+
+response:
+std_srvs.srv.Trigger_Response(success=True, message='{"points": 120933, "voxels": 68302, "counts": {"floor": 26843, "ceiling": 31277, "wall": 40149, "object": 22664}, "accuracy": 0.6111, "mean_iou": 0.4282, "iou": {"floor": 0.633, "ceiling": 0.543, "wall": 0.437, "object": 0.1}}')
+

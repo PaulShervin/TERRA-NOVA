@@ -1,0 +1,10 @@
+/usr/local/bin/run_headless.sh: line 18:    30 Killed                  ros2 launch mining_sim_gz sim.launch.py world:="$WORLD" headless:=true rviz:=false log_dir:="$OUT" "$@" > "$OUT/launch.log" 2>&1
+results in /out/cave2:
+total 12
+drwxr-xr-x 1 root root  4096 Nov 22 05:39 .
+drwxrwxrwx 1 root root  4096 Nov 22 05:35 ..
+-rw-r--r-- 1 root root   105 Nov 22 05:39 explore_status.txt
+-rw-r--r-- 1 root root 11138 Nov 22 05:39 launch.log
+-rw-r--r-- 1 root root   395 Nov 22 05:39 segment_call.log
+-rw-r--r-- 1 root root   226 Nov 22 05:39 segmentation.json
+runner exit 0

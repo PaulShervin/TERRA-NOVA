@@ -1,0 +1,12 @@
+{
+  "samples": 403,
+  "ate": 4.009706478933915,
+  "ate_odom": 3.6145455048226087,
+  "rpe": 1.0036395867614631,
+  "rpe_odom": 0.9488935460938469,
+  "keyframes": 48,
+  "loop_closures": 1,
+  "rejected_loops": 10,
+  "final_error": 3.25864891199112,
+  "final_error_odom": 4.972968406894185
+}
